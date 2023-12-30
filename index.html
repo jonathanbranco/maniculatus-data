@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Peromyscus maniculatus data accross US</title>
+</head>
+
+<body style="text-align: center; background-color: #eef; overflow: hidden;">
+<h2 style="font-size: 1.5rem"> Graph:
+<select id="options"
+        style="font-size: 1.2rem !important; background-color: white"
+        onchange="document.getElementById('iframe').src = this.options[this.selectedIndex].value">
+  <option value='total length.html'>Total length</option>
+  <option value='total length median.html'>Median of total length</option>
+  <option value='body mass.html'>Body mass</option>
+</select>
+</h2>
+<iframe id="iframe" src="total length.html"
+        style="width: 95vw; height: 85vh; margin: auto; background-color: white">
+</iframe>
+<p> Made by Jonathan M. Branco </p>
+<p> Data from doi_10_5061_dryad_8w9ghx3j7__v20200521 </p>
+</body>
